@@ -1,17 +1,9 @@
-//ex02: using javascript
-// let input = prompt('Enter User Input: ');
-// alert('Hello ' + input);
 
 let inputButton = document.querySelector('#btn-translate');
 let textInput = document.querySelector('textarea');
 let outputText = document.querySelector('#output-text');
 
-// let serverUrl = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
-// let serverUrl = "https://lessonfourapi.prerananawar.repl.co/translate/yoda.json";
 let serverUrl = "https://api.funtranslations.com/translate/minion.json";
-
-
-// console.log(text);
 
 function urlText(text) {
     // let text = textInput.value;
@@ -19,10 +11,7 @@ function urlText(text) {
 }
 
 inputButton.addEventListener("click", function userClick() {
-    // console.log("click");
-    // console.log(textInput.value);
-    // outputText.innerText = 'Hello ' + textInput.value;
-
+    
     if (textInput.value === '') {
         alert('Please Enter some Text!');
     } else if (!isNaN(parseFloat(textInput.value))) {
@@ -45,27 +34,3 @@ inputButton.addEventListener("click", function userClick() {
     }
 });
 
-//live exercise:to fetch data from mock - API
-// text1 = "Hello I'm Iron Man";
-// text2 = "Hello I'm Shaktimaan Man";
-// text3 = "Hello I'm BatMan";
-
-// function urlText(text) {
-//     return "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json" + "?text=" + text;
-// }
-
-// function urlFetch(text) {
-//     fetch(urlText(text)).then(response => response.json()).then(json => console.log(json));
-// }
-
-// // function urlFetch(text) {
-// //     fetch(urlText(text)).then(function getResponse(response) {
-// //         return response.json();
-// //     }).then(function getJsonLog(json) {
-// //         console.log(json);
-// //     });
-// // }
-
-// urlFetch(text1);
-// urlFetch(text2);
-// urlFetch(text3);
