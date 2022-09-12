@@ -34,7 +34,7 @@ body {
     display: inline-block;
     padding: 1rem 2rem;
     border-radius: 1rem;
-    box-shadow: 5px 10px 8px rgb(231, 220, 220);
+    box-shadow: 3px 5px 3px rgb(231, 220, 220);
     border: none;
     font-size: 1rem;
 }
@@ -71,5 +71,5 @@ footer {
     text-align: center;
     font-size: 1rem;
     line-height: 2rem;
-    box-shadow: 0px 10px 5px rgb(175, 173, 173), 0px -10px 5px #ccc;
+    box-shadow: 0px 5px 2px rgb(175, 173, 173), 0px -10px 5px #ccc;
 }
